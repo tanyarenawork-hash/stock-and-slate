@@ -54,7 +54,7 @@ function Dashboard() {
   const metrics = products.map(computeMetrics);
   const inventoryValue = metrics.reduce((s, m) => s + m.inventoryValue, 0);
   const profit30 = metrics.reduce((s, m) => s + m.profit30, 0);
-  const revenue30 = products.reduce((s, p, i) => s + metrics[i].revenuePerUnit * p.sold30, 0);
+  const revenue30 = products.reduce((s, p, i) => s + (metrics[i]?.revenuePerUnit ?? 0) * p.sold30, 0);
   const avgMargin = revenue30 > 0 ? (profit30 / revenue30) * 100 : 0;
   const restockCount = metrics.filter((m) => m.needsRestock).length;
   const hasSample = products.some((p) => p.isSample);

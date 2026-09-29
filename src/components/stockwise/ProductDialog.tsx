@@ -57,9 +57,9 @@ export function ProductDialog({
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     const next: Record<string, string> = {};
-    if (!draft.name.trim()) next.name = "Product name is required.";
-    if (draft.price <= 0) next.price = "Selling price must be greater than 0.";
-    if (draft.feePct < 0 || draft.feePct > 100) next.feePct = "Fee must be between 0 and 100.";
+    if (!draft.name.trim()) next["name"] = "Product name is required.";
+    if (draft.price <= 0) next["price"] = "Selling price must be greater than 0.";
+    if (draft.feePct < 0 || draft.feePct > 100) next["feePct"] = "Fee must be between 0 and 100.";
     for (const f of fields) {
       const v = Number(draft[f.key]);
       if (!Number.isFinite(v) || v < 0) next[f.key] = "Enter a number of 0 or more.";
@@ -88,12 +88,12 @@ export function ProductDialog({
               id="name"
               value={draft.name}
               onChange={(e) => set("name", e.target.value)}
-              aria-invalid={!!errors.name}
-              aria-describedby={errors.name ? "err-name" : undefined}
+              aria-invalid={!!errors["name"]}
+              aria-describedby={errors["name"] ? "err-name" : undefined}
             />
-            {errors.name && (
+            {errors["name"] && (
               <p id="err-name" className="text-xs text-destructive">
-                {errors.name}
+                {errors["name"]}
               </p>
             )}
           </div>
