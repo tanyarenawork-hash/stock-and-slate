@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Stockwise — how the estimates work" },
+      { title: "About Stockwise: how the estimates work" },
       {
         name: "description",
         content:
@@ -40,7 +40,7 @@ function About() {
             </CardHeader>
             <CardContent className="grid gap-3 text-sm leading-relaxed text-foreground/85">
               <p>
-                Small online sellers usually track stock in one spreadsheet and profit in another —
+                Small online sellers usually track stock in one spreadsheet and profit in another,
                 if at all. The result is ordering more of a product that barely breaks even after
                 fees and shipping, while a genuinely profitable item goes out of stock during a long
                 supplier lead time.

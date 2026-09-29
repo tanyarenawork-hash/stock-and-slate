@@ -42,7 +42,7 @@ export function WhatIf({ products }: { products: Product[] }) {
       <CardHeader>
         <CardTitle className="font-display text-xl">What-if calculator</CardTitle>
         <CardDescription>
-          Adjust the numbers to see an estimated effect on profit per unit. Estimates only — not a
+          Adjust the numbers to see an estimated effect on profit per unit. Estimates only, not a
           guaranteed outcome.
         </CardDescription>
       </CardHeader>

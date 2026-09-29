@@ -119,7 +119,7 @@ export const uid = () => Math.random().toString(36).slice(2, 10);
 export const sampleProducts = (): Product[] =>
   [
     {
-      name: "Linen Apron — Sand",
+      name: "Linen Apron (Sand)",
       category: "Home",
       price: 48,
       unitCost: 16.5,
@@ -167,7 +167,7 @@ export const sampleProducts = (): Product[] =>
       safetyStock: 10,
     },
     {
-      name: "Merino Beanie — Rust",
+      name: "Merino Beanie (Rust)",
       category: "Apparel",
       price: 39,
       unitCost: 14,
