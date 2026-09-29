@@ -5,13 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Stockwise: how the estimates work" },
+      { title: "About Stock and Slate: how the estimates work" },
       {
         name: "description",
         content:
-          "How Stockwise calculates profit per unit, reorder points and days of stock remaining, and where those estimates fall short.",
+          "How Stock and Slate calculates profit per unit, reorder points and days of stock remaining, and where those estimates fall short.",
       },
-      { property: "og:title", content: "About Stockwise" },
+      { property: "og:title", content: "About Stock and Slate" },
       {
         property: "og:description",
         content: "The business problem, the formulas used, and the limits of the estimates.",
@@ -31,7 +31,7 @@ function About() {
         >
           <ArrowLeft className="size-4" /> Back to dashboard
         </Link>
-        <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight">About Stockwise</h1>
+        <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight">About Stock and Slate</h1>
 
         <div className="mt-8 grid gap-6">
           <Card className="shadow-[var(--shadow-card)]">
@@ -46,7 +46,7 @@ function About() {
                 supplier lead time.
               </p>
               <p>
-                Stockwise puts both sides in one view: what each product actually earns per sale,
+                Stock and Slate puts both sides in one view: what each product actually earns per sale,
                 and when it needs to be reordered.
               </p>
             </CardContent>
