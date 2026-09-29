@@ -28,13 +28,13 @@ import { computeMetrics, money, pct, type Product } from "@/lib/stockwise";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Stockwise — Inventory & profit planning for online sellers" },
+      { title: "Stockwise: Inventory & profit planning for online sellers" },
       {
         name: "description",
         content:
           "Stockwise shows which products to restock and whether they actually make money, with profit margins, reorder points and what-if pricing.",
       },
-      { property: "og:title", content: "Stockwise — Inventory & profit planning" },
+      { property: "og:title", content: "Stockwise: Inventory & profit planning" },
       {
         property: "og:description",
         content:
@@ -123,7 +123,7 @@ function Dashboard() {
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
         <section className="mb-8">
           <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            Which products should you restock — and will they make money?
+            Which products should you restock, and will they make money?
           </h1>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             Every figure below is calculated from the numbers you enter. All results are estimates,
@@ -131,7 +131,7 @@ function Dashboard() {
           </p>
           {hasSample && (
             <Badge variant="secondary" className="mt-3">
-              Demo data — fictional sample store
+              Demo data: fictional sample store
             </Badge>
           )}
         </section>

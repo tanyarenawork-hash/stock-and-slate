@@ -131,8 +131,8 @@ export function Insights({ products }: { products: Product[] }) {
             )}
             {worst && worst.p.id !== best?.p.id && (
               <li>
-                <strong>{worst.p.name}</strong> is the weakest at {pct(worst.m.marginPct)} margin
-                {worst.m.profitPerUnit < 0 ? " — it currently loses money on every sale." : "."}
+                <strong>{worst.p.name}</strong> is the weakest at {pct(worst.m.marginPct)} margin,
+                {worst.m.profitPerUnit < 0 ? " and it currently loses money on every sale." : "."}
               </li>
             )}
             {topEarner && (
