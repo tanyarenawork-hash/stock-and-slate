@@ -28,13 +28,13 @@ import { computeMetrics, money, pct, type Product } from "@/lib/stockwise";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Stockwise: Inventory & profit planning for online sellers" },
+      { title: "Stock and Slate: Inventory & profit planning for online sellers" },
       {
         name: "description",
         content:
-          "Stockwise shows which products to restock and whether they actually make money, with profit margins, reorder points and what-if pricing.",
+          "Stock and Slate shows which products to restock and whether they actually make money, with profit margins, reorder points and what-if pricing.",
       },
-      { property: "og:title", content: "Stockwise: Inventory & profit planning" },
+      { property: "og:title", content: "Stock and Slate: Inventory & profit planning" },
       {
         property: "og:description",
         content:
@@ -73,7 +73,7 @@ function Dashboard() {
               <Boxes className="size-5" />
             </span>
             <div>
-              <p className="font-display text-xl leading-none font-semibold">Stockwise</p>
+              <p className="font-display text-xl leading-none font-semibold">Stock and Slate</p>
               <p className="text-xs text-muted-foreground">Inventory & profit planning</p>
             </div>
           </div>
@@ -216,7 +216,7 @@ function Dashboard() {
       </main>
 
       <footer className="border-t border-border py-8 text-center text-xs text-muted-foreground">
-        Stockwise stores your data only in this browser.{" "}
+        Stock and Slate stores your data only in this browser.{" "}
         <Link to="/about" className="underline underline-offset-4">
           How the calculations work
         </Link>
