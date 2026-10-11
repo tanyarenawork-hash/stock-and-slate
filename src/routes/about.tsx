@@ -16,6 +16,8 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: "The business problem, the formulas used, and the limits of the estimates.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: About,

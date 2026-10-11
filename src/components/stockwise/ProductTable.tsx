@@ -26,7 +26,7 @@ export function ProductTable({
         <TableHeader>
           <TableRow>
             <TableHead>Product</TableHead>
-            <TableHead className="text-right">Price</TableHead>
+            <TableHead className="text-right">Revenue / unit</TableHead>
             <TableHead className="text-right">Profit / unit</TableHead>
             <TableHead className="text-right">Margin</TableHead>
             <TableHead className="text-right">Stock</TableHead>
@@ -40,7 +40,7 @@ export function ProductTable({
           {products.map((p) => {
             const m = computeMetrics(p);
             return (
-              <TableRow key={p.id}>
+              <TableRow key={p.id} className="h-14">
                 <TableCell>
                   <div className="font-medium">{p.name}</div>
                   <div className="text-xs text-muted-foreground">{p.category}</div>
